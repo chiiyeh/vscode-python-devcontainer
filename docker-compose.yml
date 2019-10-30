@@ -5,10 +5,11 @@ services:
       context: .
       args:
         user: "$USER"
-    container_name: dev_container
+    # container_name: dev_container
     network_mode: "host"
     volumes:
     - type: bind
       source: ./
       target: /home/${USER}/dev
     command: "tail -f /dev/null"
+
