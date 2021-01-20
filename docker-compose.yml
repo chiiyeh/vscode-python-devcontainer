@@ -5,7 +5,8 @@ services:
       context: .
       args:
         user: "$USER"
-    # container_name: dev_container
+    image: python_dev
+    container_name: python_dev
     network_mode: "host"
     volumes:
     - type: bind
