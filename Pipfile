@@ -11,13 +11,12 @@ rope = "*"
 jupyterlab = "*"
 jupytext = "*"
 nbdev = "*"
-v = {editable = true,version = "*"}
 
 [packages]
 numpy = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
 
 [pipenv]
 allow_prereleases = true

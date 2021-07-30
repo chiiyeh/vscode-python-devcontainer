@@ -1,4 +1,4 @@
-FROM python:3.7-buster
+FROM python:3.9-buster
 
 RUN apt-get update && apt-get upgrade -y \
     && pip install pipenv
@@ -11,7 +11,6 @@ USER ${user}
 RUN mkdir /home/${user}/dev
 WORKDIR /home/${user}/dev
 
-COPY jupyter_config.txt Pipfile ./
-RUN pipenv install --dev && \
-    pipenv run jupyter notebook --generate-config && \
-    cat jupyter_config.txt >> ~/.jupyter/jupyter_notebook_config.py
+COPY Pipfile Pipfile.lock ./
+RUN pipenv install --dev --skip-lock
+COPY jupytext.toml /home/${user}/
