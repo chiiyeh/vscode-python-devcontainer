@@ -13,3 +13,9 @@ services:
       source: ./
       target: /home/${USER}/dev
     command: "tail -f /dev/null"
+    # for running with gpu
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #       - capabilities: [gpu]
