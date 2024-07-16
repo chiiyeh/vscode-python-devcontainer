@@ -11,6 +11,6 @@ USER ${user}
 RUN mkdir /home/${user}/dev
 WORKDIR /home/${user}/dev
 
-COPY Pipfile Pipfile.lock ./
+COPY Pipfile ./
 RUN pipenv install --dev --skip-lock
 COPY jupytext.toml /home/${user}/

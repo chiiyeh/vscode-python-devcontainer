@@ -4,5 +4,5 @@
 	"dockerComposeFile": ["docker-compose.yml"],
 	"service": "dev",
 	"workspaceFolder": "/home/${env:USER}/dev",
-	"extensions": ["ms-python.python", "streetsidesoftware.code-spell-checker", "yzhang.markdown-all-in-one", "davidanson.vscode-markdownlint"],
+	"extensions": [],
 }

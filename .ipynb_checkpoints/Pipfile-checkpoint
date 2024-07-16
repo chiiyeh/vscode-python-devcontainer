@@ -11,17 +11,12 @@ rope = "*"
 jupyterlab = "*"
 jupytext = "*"
 nbdev = "*"
-line-profiler = "*"
 
 [packages]
 numpy = "*"
 more-itertools = "*"
 regex = "*"
 faster-whisper = "*"
-transformers = {extras = ["torch"], version = "*"}
-sentencepiece = "*"
-soundfile = "*"
-websockets = "*"
 
 [requires]
 python_version = "3.9"
